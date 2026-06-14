@@ -1,0 +1,78 @@
+# ── Workforce Sentiment Pipeline Configuration ────────────────────────────────
+#
+# Edit this file to control which subreddits, files, and filters are active.
+# Run with: python pipeline.py --config config.yaml
+
+# Work-relevant subreddit allowlist (lowercase, no r/ prefix)
+subreddits:
+  - antiwork
+  - jobs
+  - careerguidance
+  - humanresources
+  - productivity
+  - construction
+  - supplychain
+  - warehouse
+  - retail
+  - trucking
+  - nursing
+  # Add more here, e.g.:
+  # - cscareerquestions
+  # - workreform
+  # - mildlyinfuriating
+
+# Input file paths (relative to project root)
+inputs:
+  antiwork_posts: data/raw/antiwork/the-antiwork-subreddit-dataset-posts.csv
+  antiwork_comments: data/raw/antiwork/the-antiwork-subreddit-dataset-comments.csv
+  # Post-centric file from vijayj0shi dataset (preferred over user_posts.csv)
+  reddit_sentiment_posts: data/raw/reddit_sentiment/posts_df.csv
+  reddit_sentiment_comments: data/raw/reddit_sentiment/comments.csv
+  # User-centric file — included but must pass strict subreddit allowlist
+  reddit_sentiment_user_posts: data/raw/reddit_sentiment/user_posts.csv
+  # Glassdoor Kaggle dataset (not filtered by subreddit — company-scoped)
+  glassdoor_reviews: data/raw/glassdoor_kaggle/glassdoor_reviews.csv
+  # To add more Kaggle datasets, see: Adding New Datasets in README below.
+  # extra_datasets:
+  #   - path: data/raw/my_new_dataset/posts.csv
+  #     type: post
+  #     field_map:
+  #       id: id
+  #       title: title
+  #       selftext: text
+  #       subreddit: subreddit
+  #       score: score
+  #       created_utc: created_utc
+
+# Output folder (relative to project root)
+output_dir: data/processed
+
+# Optional date range filter — comment out to include all dates
+date_from: "2020-01-01"
+date_to:   "2024-12-31"
+
+# Minimum text length (characters) after stripping URLs and whitespace
+min_text_length: 30
+
+# Minimum Reddit score to keep — removes bots/spam/auto-deleted comments
+# score >= 2 cuts ~60-70% of low-quality comments while keeping real discussion
+min_score: 2
+
+# Per-subreddit row cap for balanced and tractable dataset (null = no limit)
+# 25k per sub is ample for sentiment training
+max_per_subreddit: 25000
+
+# ── Glassdoor privacy settings ───────────────────────────────────────────────
+# anonymize_firm: replace firm name with SHA-256 hash prefix in firm_id column
+glassdoor_anonymize_firm: true
+# keep_location: false = set location to empty in processed output
+glassdoor_keep_location: false
+
+# Sentiment mode: "vader" | "textblob" | "none"
+#   vader      - VADER compound score (-1 to +1), fast, no training needed
+#   textblob   - TextBlob polarity, fallback if vaderSentiment not installed
+#   none       - Skip sentiment; outputs clean text + metadata only
+sentiment_mode: none
+
+# CSV read chunk size (rows); lower if hitting memory limits
+chunk_size: 50000

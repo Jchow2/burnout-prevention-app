@@ -1,0 +1,438 @@
+cluster_id,cluster_label,rank,id,source,type,subreddit,text_snippet
+0,intern / internship / intern pros,0,cc52bd737fd316bb,glassdoor,review,,"Intern
+PROS: Not many advantages, you get paid well
+CONS: worked too much, non friendly environment"
+0,intern / internship / intern pros,1,09c6531e338c637f,glassdoor,review,,"Intern
+PROS: Nice people and overall environment in general
+CONS: Nothing. Except for sometimes having nothing to do"
+0,intern / internship / intern pros,2,e614c76495d7476e,glassdoor,review,,"Internship
+PROS: Nice conditions in the job
+CONS: None, everything is very good."
+0,intern / internship / intern pros,3,58cb32f52cd816f2,glassdoor,review,,"Intern
+PROS: Nice colleagues, nice environment, great place for internship.
+CONS: No major cons, a pleasant exprience overall."
+0,intern / internship / intern pros,4,b5960d97eaac6e4c,glassdoor,review,,"internship
+PROS: good benefit 
+nice people
+good environment
+CONS: everything is so so perfect"
+1,balance / work life / life balance,0,60880dd18e0995e5,glassdoor,review,,"Good Work Life Balance
+PROS: Good Work Life Balance in Company
+CONS: No Cons as of now"
+1,balance / work life / life balance,1,388d5d2f4b94a777,glassdoor,review,,"Good
+PROS: Work life balance is High
+CONS: Pay Is less compared to industry standards"
+1,balance / work life / life balance,2,0139383abfec85e4,glassdoor,review,,"Work life balance
+PROS: Good work life balance company
+CONS: Not any I think of"
+1,balance / work life / life balance,3,ac8aaad1cbdea412,glassdoor,review,,"Good work life balance
+PROS: Good work life balance overall
+CONS: Low pays than market average. Not good enough internal structure."
+1,balance / work life / life balance,4,bcbb6c74b3b6d52b,glassdoor,review,,"Great Work Life Balance
+PROS: Great work life balance and great people.
+CONS: It is a large company, so not for everyone."
+2,management / good / cons,0,9c7d6c75acefe49f,glassdoor,review,,"Great
+PROS: Good people and good management
+CONS: None that I can think of"
+2,management / good / cons,1,d4747b586aa85435,glassdoor,review,,"Good management
+PROS: Friendly staff and good management
+CONS: there are no cons to working here"
+2,management / good / cons,2,00c1af239a0c0afd,glassdoor,review,,"Not good
+PROS: Easy enough work, staff are nice
+CONS: Too many managers 
+No communication 
+Low pay"
+2,management / good / cons,3,7c5e79dc1753e10a,glassdoor,review,,"Management
+PROS: Great and awesome challenging as well as great did i say
+CONS: Not to shabby to be honest"
+2,management / good / cons,4,7a172d9ce98f1daa,glassdoor,review,,"Excellent
+PROS: Good opportunity for work experience, great colleagues
+CONS: Sometimes management was quite poor"
+3,career / cons / good,0,2e4ff4cf1ed092c1,glassdoor,review,,"PROS: Great place to start a career
+CONS: Salary and compensation are limited"
+3,career / cons / good,1,21bf9c31d4589990,glassdoor,review,,"Good career
+PROS: Great place to grow and learn
+CONS: Management growth is limited within the company"
+3,career / cons / good,2,430de35e175557ec,glassdoor,review,,"Overall good company to start your career
+PROS: Good benefits and great colleagues
+CONS: Long hours, pay is low"
+3,career / cons / good,3,46a99e6ae073b5d0,glassdoor,review,,"Good place to build your career
+PROS: Great place to start, learn and build your career from scratch. If you're staying for the long run it is only worthwhile if you make to Partner
+CONS: Long working hours, almost 24/7 type operations, very little work-life separation"
+3,career / cons / good,4,4f325dabe07ff1a8,glassdoor,review,,"Good
+PROS: Good people, pay good for starting career
+CONS: None I can think of"
+4,place work / place / work,0,601e80490d2f131d,glassdoor,review,,"Good place to work
+PROS: Awesome culture, collaborative, competitive, and relatively no-pressure environment.
+CONS: One you are in growth is slow"
+4,place work / place / work,1,7e2f278493a5d760,glassdoor,review,,"Great place to work
+PROS: Great technology and people. Plenty of opportunity to make a difference.
+CONS: High paced environment, chaotic at times."
+4,place work / place / work,2,522950d4c0107d19,glassdoor,review,,"Good place to work
+PROS: Great colleagues and amazing benefits
+CONS: Hard to progress unless you know the right people"
+4,place work / place / work,3,a5c4ba1675559bb0,glassdoor,review,,"Great place to work
+PROS: Great environment, good pay and great benefits
+CONS: Some downtime but not much con"
+4,place work / place / work,4,1a3e778e8dafcf57,glassdoor,review,,"Great place to work
+PROS: Friendly and helpful colleagues and managers,
+Great benefits
+CONS: Cant think of any Cons, its all good"
+5,good / cons / pros,0,b321fe91c61626a6,glassdoor,review,,"Good
+PROS: Creative and very friendly to work with.
+CONS: None at the moment at all."
+5,good / cons / pros,1,40a753f72e3c7085,glassdoor,review,,"Great
+PROS: Great Place to work for
+CONS: none to say ,very satisfied"
+5,good / cons / pros,2,2b7d1f4b2a4418c9,glassdoor,review,,"good
+PROS: good place to work at
+CONS: none to mention really its ok"
+5,good / cons / pros,3,2e0804bda589a5dd,glassdoor,review,,"very good
+PROS: all good for the advantages
+CONS: nothing much to say for it"
+5,good / cons / pros,4,99d24d76ad6e78db,glassdoor,review,,"Great
+PROS: Great for all people to work
+CONS: Great for people with experience"
+6,good / cons / pros,0,a469c03c37e2bead,glassdoor,review,,"Good
+PROS: Great place to gain experience.
+CONS: Work is too easy. Give more challenges to employees who can handle it."
+6,good / cons / pros,1,a06153d9b351d2c4,glassdoor,review,,"Good
+PROS: Good pay, good staff, great place to work and benefits
+CONS: Long shifts, less breaks, little time to do jobs, can start one thing and move to next"
+6,good / cons / pros,2,8750dc149f861b17,glassdoor,review,,"Good
+PROS: Good pay, good package. good
+CONS: Long working hours. nothing else"
+6,good / cons / pros,3,957dce7e6be0f244,glassdoor,review,,"Good
+PROS: Pay is very good all around
+CONS: Balance and work life is very hard"
+6,good / cons / pros,4,50e8b2442b1b562a,glassdoor,review,,"Good
+PROS: Good Salary, People, Hours, Bonus’
+CONS: Not much to complain about, repetitive work."
+7,company / company pros / good,0,2f69621baf5c21d0,glassdoor,review,,"Good
+PROS: Good company to work for
+CONS: No specific cons for company"
+7,company / company pros / good,1,82376bd996188c4d,glassdoor,review,,"Good company
+PROS: Great company to work for
+CONS: There is no cons here"
+7,company / company pros / good,2,70632c7826bad755,glassdoor,review,,"Very good company
+PROS: Company provides good learning opportunity.
+CONS: Very less work life balance."
+7,company / company pros / good,3,9471d7cfbb40556a,glassdoor,review,,"Good Company
+PROS: Good Company to work for
+CONS: None I can think off"
+7,company / company pros / good,4,c1701bf40e1649ba,glassdoor,review,,"good
+PROS: great company to work for
+CONS: none that I believe to be applicable"
+8,hours / cons / pros,0,14040d4e067315cc,glassdoor,review,,"great
+PROS: very flexible hours and good people
+CONS: no pay rise, slow progression"
+8,hours / cons / pros,1,6fd5ec1137c6f9fa,glassdoor,review,,"Good
+PROS: Very flexible working hours for all staff
+CONS: Can be very busy and hectic"
+8,hours / cons / pros,2,617fdc5014d86cd9,glassdoor,review,,"Good to work
+PROS: All good and friendly environment
+CONS: Long time work hours. Less management"
+8,hours / cons / pros,3,064440e5c2c8d29d,glassdoor,review,,"Good
+PROS: Flexibility available around working hours
+CONS: Benefits, salary package not market competitive"
+8,hours / cons / pros,4,bf35859658bc0657,glassdoor,review,,"Good
+PROS: The pay is good and flexible hours
+CONS: Bad management and not training people properly"
+9,people / just / capitalism,0,svphsl,reddit,post,antiwork,"Posted about how bs that unskilled labor somehow justifies poverty wages. My grandfather posted this in response.
+
+""Really?  So ANYONE is skilled enough to run new wire to wire a house? Or install the plumbing? Flooring?  Or cook French fries on the FIRST day of work, before someone tells them how l"
+9,people / just / capitalism,1,hgzf5ka,reddit,comment,antiwork,"It’s because the billionaires, their corporate managers, and boards are so out of control with greed, worker rights and ethics violations — all during a deadly pandemic. Just during the first year of the pandemic alone, the 2,100 billionaires in America have become wealthy by trillions, which is the"
+9,people / just / capitalism,2,fo18d1b,reddit,comment,antiwork,They just took the veneer off capitalism. It has always been a threat. Work or die.
+9,people / just / capitalism,3,rgj7go,reddit,post,antiwork,"Ah, the lovely American educational system. The one where you sit in a building for 7 hours a day 5 days a week for 9 months straight, get next to nothing done, then go home with even more work to do when you're supposed to be hanging out with family....
+
+We dislike how capitalism is working in this"
+9,people / just / capitalism,4,hp51wao,reddit,comment,antiwork,"Stop eating up this divisive generational nonsense. Anyone who works for a living working class. We’re all getting fucked by capitalism. 
+
+I don’t care how old or young anyone is, as long as they’re willing to fight for workers liberation, they have a place in the revolution."
+10,just / like / don,0,pu0xz2,reddit,post,antiwork,"I worked a shitty kitchen job at a Buffalo Wild Wings for 2 days, horrible management, no one was on time, the usual I guess. I think the biggest takeaway from that job though was this gem of a question on the stupid personality questionnaire:
+
+“I enjoy watching action movies because I would like to"
+10,just / like / don,1,hjqdw2k,reddit,comment,antiwork,"Yup it's one reason I hardly ever post things ""calls of this is so fake"" I'm like sorry bro you never had shitty bosses or crazy accidents or were kidnapped when you were a kid, jeez"
+10,just / like / don,2,hpl3g80,reddit,comment,antiwork,"I used to work with a woman who had her seat next to the sign-in sheet. She'd tsk-tsk or make comments when we'd sign out. ""Easy day?"" she'd say when I clocked out after ten hours. Drove me fucking mad."
+10,just / like / don,3,hodoqd8,reddit,comment,antiwork,this isn't penthouse letters to the nra sunshine
+10,just / like / don,4,puppv2,reddit,post,antiwork,"Words cannot express the feelings i had the moment this awful interview ended with this metaphor. The sentiment of being a object, completely devalued and thrown into ""the lottery"". 
+
+My entire life and mental well-being is on the line, and this guy just dumps me like a ticket. I know it's the harsh"
+11,just / like / workers,0,sto6tu,reddit,post,antiwork,"I’m talking about the posts that are pics of fast food hiring signs, heaping praise on these mega-corporations for paying what is barely a living wage and providing the bare minimum of benefits. With hundreds of comments praising how well they treat their employees, their delicious food and their lo"
+11,just / like / workers,1,qtt1o6,reddit,post,antiwork,I work at a unionized grocery chain in Saint Louis that rhymes with Schmucks. Since the beginning of the pandemic this companies profits have continued to soar but our staffing over time has continued to get less and less. They raise wages very minimally which obviously doesn’t really help with the 
+11,just / like / workers,2,qujglv,reddit,post,antiwork,"A few years back, I was bussing tables at a fairly well known taco chain. The owner of the franchise came in like he did every month and we had this conversation.
+
+""If you take care of the customers they will be more likely to come back. The more they come back the more profits we get and the more y"
+11,just / like / workers,3,pid4qp,reddit,post,antiwork,Why does Amazon get to treat there employees like shit? I thought we had labor laws?
+11,just / like / workers,4,rbwa1m,reddit,post,antiwork,Just overheard the owner complaining that no one would help him do something while all the workers were already off the clock standing around socializing and blamed it on a fundamental work ethic issue. Meanwhile the HR lady is calling the work ethic $3 worth and bitching they demand $22. It’s amazi
+12,team / good / great,0,03502b4e18cc2a80,glassdoor,review,,"Good Job
+PROS: Not difficult and fun team
+CONS: A bit boring- No way of increasing your value"
+12,team / good / great,1,0f7acf950ed877f6,glassdoor,review,,"Good
+PROS: Good team, and good location,
+CONS: Long working hours not paid. work life balance"
+12,team / good / great,2,73c7391a2bbac24f,glassdoor,review,,"Good
+PROS: Good work environment and team
+CONS: they provide so much benefits"
+12,team / good / great,3,bdb370fc92b988c0,glassdoor,review,,"Good
+PROS: Good working environment good team
+CONS: N/A no cons to give"
+12,team / good / great,4,adc495433970c351,glassdoor,review,,"Good
+PROS: teamwork, good salary, good atmosphere,
+CONS: bad schedule, too much work for one person"
+13,just / told / job,0,s88f3i,reddit,post,antiwork,"I kept scrolling through this subreddit and immediately thought of this story of my job.
+
+In December of 2020 I worked as a seasonal worker for HomeGoods. It was boring most of the time. Maskless people pissed me off. If I ever wanted an extra break they gave it to me. I'd get a shitty custom 10% of"
+13,just / told / job,1,htygy72,reddit,comment,antiwork,"I worked at a small construction company here in AZ for a while. They were garbage humans and I could go into lots of details, but the quitting moment came when they told me I must work Saturday (an off day) with no pay, the whole office would be doing it.  I couldn’t because that’s illegal, but als"
+13,just / told / job,2,qls6mn,reddit,post,antiwork,"I’d had a week off for Halloween (yes I know, I’m an adult but I enjoy it more than Christmas), and when I checked my online rota, it hadn’t been updated and I went in thinking I was in. Nothing major, just my usual 9-5 shift.
+I get in, start working, only to have a manager tell me it was actually m"
+13,just / told / job,3,qvi515,reddit,post,antiwork,"Hi! I just need to rant! 
+I used to have a strong work ethic. I would always arrive early, share coffee and homemade baked goods with my bosses and coworkers. I would always offer to stay late. When we had nothing to do, I would be cleaning and helping out others.
+
+For nothing. 
+
+Every time there wa"
+13,just / told / job,4,rbbdi3,reddit,post,antiwork,"I thought I could deal with it. It was full time, my coworkers were nice, my manger? is that what she was? i don't know the hierarchy. Point is, she was in charge of our work and she was a bitch. The work was tedious but on a mental health scale, I couldn't cope with it at all. Walmart taught me tha"
+14,ibm / sap / oracle,0,dd7bbf2e0e2f6f0a,glassdoor,review,,"IBM
+PROS: Great pay and good work life balance.
+CONS: Issues with the management hires."
+14,ibm / sap / oracle,1,96c52e347b8dd73c,glassdoor,review,,"Good
+PROS: Good working environment at IBM
+CONS: Not much but looking for a change"
+14,ibm / sap / oracle,2,218e6630a97d8628,glassdoor,review,,"A very good Company to work with
+PROS: Loved to work in the organization since last 2 years. Very nice policies, lot of learning stuffs. Still exploring the IBM culture.
+CONS: There is so much to explore in this company, you can barely explore in your full tenure."
+14,ibm / sap / oracle,3,1ae81fb2f371e124,glassdoor,review,,"Ibm very good
+PROS: Good management and work also
+CONS: No downsides it's a good company"
+14,ibm / sap / oracle,4,3182a3a270311ed3,glassdoor,review,,"good
+PROS: good to work in IBM as full time employee
+CONS: none at the moment on IBM"
+15,company / cons / pros,0,7a107e2b11fccb2d,glassdoor,review,,"Amazing company to work for
+PROS: Incredible culture and opportunity to move within
+CONS: In such a large company that is so structured it is hard to advance quickly or make a large scale impact"
+15,company / cons / pros,1,2fc2777356997490,glassdoor,review,,"Great company to work for
+PROS: Amazing culture, transparency and best products in the marketplace
+CONS: Getting very large in size"
+15,company / cons / pros,2,a8b5e26cea77c805,glassdoor,review,,"Great company
+PROS: good culture and smart people all around
+CONS: hard to get noticed for promotion; internal politics"
+15,company / cons / pros,3,165263704182ec92,glassdoor,review,,"N/a
+PROS: Great company culture and values
+CONS: Big teams, hard to communicate"
+15,company / cons / pros,4,32706d975681db8e,glassdoor,review,,"Lots of highs and lows!
+PROS: Diversity of work and capabilities in the firm to explore
+CONS: Massive organization; can feel free fragmented, non-supportive and overly complex at times"
+16,culture / culture pros / work,0,e9055cc69fd01fee,glassdoor,review,,"Great Work Culture
+PROS: Work Culture is great here. Everyone is respected
+CONS: More or less Standard Growth Opportunities"
+16,culture / culture pros / work,1,399c3c32266aedf2,glassdoor,review,,"Very Good Work Culture
+PROS: work life balance
+opportunities to grow
+CONS: nothing as such. all good"
+16,culture / culture pros / work,2,ae22a50d42e3c8cd,glassdoor,review,,"Work culture
+PROS: Good environment, colleagues are good
+CONS: Long hours, Bad pay, bad management"
+16,culture / culture pros / work,3,d31c940826dd2cd9,glassdoor,review,,"Work culture
+PROS: Work culture is good and lot of opportunities
+CONS: Nothing Specifically its a good company"
+16,culture / culture pros / work,4,0c6b095feddf598a,glassdoor,review,,"Good culture
+PROS: Great on work life
+Good leadership
+CONS: Big company feel, very slow"
+17,cons / pros / customers,0,8eeaf9328e7026ae,glassdoor,review,,"Great
+PROS: Easy work, friendly, nice customers
+CONS: Gross, hectic, busy, rude employees"
+17,cons / pros / customers,1,f0941ab6a03315fb,glassdoor,review,,"Retail at its finest
+PROS: Lovely staff, 10% discount, friendly
+CONS: Minimum wage, long hours, need to have a lot of patience"
+17,cons / pros / customers,2,26d02b7465286698,glassdoor,review,,"good
+PROS: nice pay and co workers are nice
+CONS: customers are terrible and make me cry"
+17,cons / pros / customers,3,37570edb96e73bfe,glassdoor,review,,"stepping stone in retail
+PROS: good staffs to work with
+CONS: under pay and not many hours"
+17,cons / pros / customers,4,1183a93ea24f7136,glassdoor,review,,"Great
+PROS: Job was great and people were nice.
+CONS: Customers were not nice, wouldn’t ever be nice."
+18,environment / environment pros / good,0,e1729bf509aff2f5,glassdoor,review,,"Excellent work environment
+PROS: Pays well. Kind staff. Safe environment.
+CONS: There are no cons here."
+18,environment / environment pros / good,1,1794683c780af802,glassdoor,review,,"Good working environment
+PROS: Good environment to work. Good company culture
+CONS: It can be really busy"
+18,environment / environment pros / good,2,703b9c492499179d,glassdoor,review,,"Great working Environment
+PROS: Supportive working environment, great working experience with many opportunities to grow
+CONS: Long working hours, Less Work-Life Balance"
+18,environment / environment pros / good,3,5066ecbb54064289,glassdoor,review,,"Good working environment
+PROS: - Good friendly atmosphere at all times
+CONS: - Was a bit tedious after awhile"
+18,environment / environment pros / good,4,9957c7e619cc78f2,glassdoor,review,,"Good working environment
+PROS: Love the working environment here. Work hours is flexible.
+CONS: Company benefit is average. Not so many"
+19,just / job / work,0,qmv8ed,reddit,post,antiwork,I’m 29. I’m a white male. I have a degree in computer networking. I have been working at my job for 6 years. I have come to a point in my life where healing / unlearning / discovering my true self has taken priority over everything. My job is trying to pressure me into quitting since I haven’t been 
+19,just / job / work,1,ifppn6,reddit,post,antiwork,"I just turned 24 years old, and literally should not be complaining at all. Sorry in advance for coming off like an ass. I am beyond grateful to [still] have a job in these uncertain times, but even long before Covid I hated the work I did. I sought out therapy due to the amount of depression and st"
+19,just / job / work,2,sn61yr,reddit,post,antiwork,"What can those of us who can barely keep slaving away do? 
+
+In my particular example and to keep it short, I have multiple serious debilitating illnesses. All made worse by working. 
+
+I'm talking for the less fortunate among us, that for one reason or another, working makes their life a living hell."
+19,just / job / work,3,g98z4h,reddit,post,antiwork,"Last year I was unemployed for almost a full year after graduating from my master’s degree, and it was making me quite upset. Then I got a job offer in a giant corporate company I’d never want to work at but had to take it as I didn’t have anything else. It’s only been 4 months but I feel so burnt o"
+19,just / job / work,4,sat8nx,reddit,post,antiwork,"Im 18, I live in the middle of nowhere in Ohio, and I’m just recently graduated from high school. I worked at a factory for $18 an hour. I hated it so much because it’s swing shift and it was 12 hours. Every month you would switch from first shift (7:30 am-7:30 pm) to third shift (7:30 pm-7:30 am). "
+20,job / good / job pros,0,529a391579f18ef6,glassdoor,review,,"Good job
+PROS: It is a good experience
+CONS: It can be pretty demanding"
+20,job / good / job pros,1,14ae7d6c0dd4aa81,glassdoor,review,,"Good
+PROS: Good pay for your experience
+CONS: long working hours, no promotions"
+20,job / good / job pros,2,c5be844f486b0034,glassdoor,review,,"Good experience
+PROS: Challenging work, lots of growth. Great people
+CONS: Long hours. Pay isn't great."
+20,job / good / job pros,3,2444ae44f10e53ed,glassdoor,review,,"Good
+PROS: Nice job and environment to be in
+CONS: Very stressful and time consuming"
+20,job / good / job pros,4,1749f17fa19bf2f2,glassdoor,review,,"Good job
+PROS: Good pay and nice staff
+CONS: None every thing about it is good"
+21,salary / good / cons,0,b3895f15aad4bc26,glassdoor,review,,"Salary
+PROS: Decent salary and work environment
+CONS: Not many cons, mostlt all good"
+21,salary / good / cons,1,15db4f5e5918fc50,glassdoor,review,,"Salary
+PROS: Good pay, nice colleagues, opportunity to travel around
+CONS: Work life balance issue, promotion not constant"
+21,salary / good / cons,2,e881ad7cd9ef0dd4,glassdoor,review,,"Good salary
+PROS: Good benefits, pay and services.
+CONS: Monotonous work, sometimes super hectic"
+21,salary / good / cons,3,92623cc4ab0fc591,glassdoor,review,,"NICE
+PROS: BIG COMPANIES, Good experience, good life-working balance
+CONS: LOW SALARY, no many opportunities"
+21,salary / good / cons,4,26ca06771b96d42f,glassdoor,review,,"Salary
+PROS: Fun, good environment and great workers.
+CONS: Overworked sometimes and not long enough breaks."
+22,food / free / cons,0,3e36fe43476de4cc,glassdoor,review,,"Not Bad
+PROS: fast paced, challenging, free food
+CONS: lots of customers, hard work"
+22,food / free / cons,1,3aa69fd2449cf37b,glassdoor,review,,"nothing good
+PROS: You get some free food once in a while. Customers are usually nice.
+CONS: Pretty bad atmosphere at work."
+22,food / free / cons,2,90bb4eb6b1323fd2,glassdoor,review,,"good job
+PROS: flexible timing and free food
+CONS: low pay and people there are rude to new coners"
+22,food / free / cons,3,2b63d6d5c2a9d2e8,glassdoor,review,,"Bad
+PROS: The free food is good
+CONS: Didn’t like working there much"
+22,food / free / cons,4,e7137739732a72c9,glassdoor,review,,"Good
+PROS: There is good pay and free food
+CONS: The hours can be long"
+23,job / pay / wage,0,rdoe08,reddit,post,antiwork,"I am a young adult worker and have a good work ethic, but I hate it when employees expect a lot out of You and they are paying you way below market rates.  I mean I will put the bear minium effort if you do it."
+23,job / pay / wage,1,r8b9d6,reddit,post,antiwork,"Obvious boomer here working for minimum wage as a grocery store bag boy in 1978.  ""Son, I've been watching you and I like your hard work so I'm going to give you a 15 cent raise.""  Was kinda pleased until literally three weeks later I found out the CA state minimum went up to $2.65.  Never forgot th"
+23,job / pay / wage,2,gfn9bin,reddit,comment,antiwork,"I used to work 50-60 hrs a week, maybe I'd go back to it for triple or quadruple the pay. 
+
+But probably not because that job sucked."
+23,job / pay / wage,3,hw2hdcn,reddit,comment,antiwork,Write why you can't hire people with arrow pointing at wages. At taxes that's 6.50 and hour.
+23,job / pay / wage,4,hqo0quw,reddit,comment,antiwork,"I get paid a 5 figure salary, so it's not that hard to believe...
+$10.000 per hour.
+
+
+Ahem"
+24,place / great / place pros,0,c6f7754657a176be,glassdoor,review,,"Great Place
+PROS: Company is amazing to work for.
+CONS: No cons great environment to work for."
+24,place / great / place pros,1,7381e2caba0f6ba7,glassdoor,review,,"Great
+PROS: Really great place to work
+CONS: Nothing bad to say about it"
+24,place / great / place pros,2,03c80ff032bffcb3,glassdoor,review,,"Good
+PROS: A really nice place to work.
+CONS: A lot of work to be done"
+24,place / great / place pros,3,aaa4ce3c11ae62ab,glassdoor,review,,"great
+PROS: Nice place to work good people good opportunities
+CONS: No cons great place to work"
+24,place / great / place pros,4,bd31ff76870db12a,glassdoor,review,,"Great place
+PROS: Great place to work.
+Good Management
+CONS: Nothing I am can think of"
+25,pros / cons / people,0,c36e3df0aab3c11c,glassdoor,review,,"Bad
+PROS: decent pay for the work
+CONS: bad managers, rude constantly, underappreciated, overworked"
+25,pros / cons / people,1,2d8a19ee9c74ba80,glassdoor,review,,"Dont
+PROS: Free Lunches, nice external status
+CONS: Everything else( terrible work culture, competitive to a fault, etc)"
+25,pros / cons / people,2,e8312915c233241a,glassdoor,review,,"Good
+PROS: Lot of opportunities around the workplace
+CONS: Its very volatile and political"
+25,pros / cons / people,3,a40257a57ceb6121,glassdoor,review,,"Work
+PROS: Great environment, great pay, great people
+CONS: Nothing really, everyone seemed nice"
+25,pros / cons / people,4,54fcc151ed31141b,glassdoor,review,,"Used to be good place to work
+PROS: Good benefits 
+Many spiffs
+Good product
+CONS: Bad at communicating to employee, vague and secretive
+Political
+Too much expectation to AE level with no supporting function or programs"
+26,learning / good / cons,0,834cc3c3f309ddb9,glassdoor,review,,"Good
+PROS: Good experience, many learning opportunities
+CONS: Long hours, hierarchical, average pay"
+26,learning / good / cons,1,efc8dc3a5a4ff23b,glassdoor,review,,"student
+PROS: Great place to work and study
+CONS: There are not many downsides"
+26,learning / good / cons,2,9ad78b73b3853dd1,glassdoor,review,,"Good
+PROS: Lots of learning opportunities here
+CONS: The Work life balance is hard"
+26,learning / good / cons,3,1ef68757f1d53383,glassdoor,review,,"Good as a student
+PROS: nice working environment, safe and quite
+CONS: limited connections to the industry"
+26,learning / good / cons,4,dbdb7aeab82e1757,glassdoor,review,,"Good for learning
+PROS: A lot of things to learn on the job.
+CONS: Long working hours, lack of work life balance."
+27,cons / pros / work,0,57c6a7735897fd15,glassdoor,review,,"Ok
+PROS: Great tech atmosphere and complete
+CONS: The hours , and no work life balance"
+27,cons / pros / work,1,fe24b095b32ac3ba,glassdoor,review,,"Pretty good
+PROS: Best hardware around, relatively down-to-business work atmosphere
+CONS: Kind of bureaucratic, have to get approval to access everything"
+27,cons / pros / work,2,75f492c4696c8d88,glassdoor,review,,"Very challenging
+PROS: More things to experience and learn
+CONS: Short of manpower so the workload is quite heavy"
+27,cons / pros / work,3,086764b82db81431,glassdoor,review,,"Good
+PROS: - Good Salary
+- Surrounding with good technical team
+CONS: - work life balance is not that good
+- Legacy technology work"
+27,cons / pros / work,4,3b46526dd8571ba3,glassdoor,review,,"Good
+PROS: Flexible, open, communication, quality, support
+CONS: Hours, resource, busy and busy"
+28,covid / cons / pros,0,20b6aef3c510008d,glassdoor,review,,"Good company
+PROS: Often have free meals, flexible shifts, good health and safety and good management
+CONS: Laid off due to covid 19 only kept salary staff as was casual"
+28,covid / cons / pros,1,b1b2fc7691d3b469,glassdoor,review,,"Excellent Employer
+PROS: Caring and supportive and have looked after their employees right through the Covid crisis
+CONS: I can't think of any!"
+28,covid / cons / pros,2,b989956c47321c60,glassdoor,review,,"Now it is truly a great place to work
+PROS: Flexible on working arrangements even before Covid, but now more so than ever. 
+A change in culture over the last year+, has made it a more caring place to work.
+Finally a CEO putting realistic targets in place, and a fairer bonus structure.
+CONS: Need t"
+28,covid / cons / pros,3,63d6805875b69689,glassdoor,review,,"Great employer
+PROS: Has great benefits and pay
+CONS: Has been a mess since Covid"
+28,covid / cons / pros,4,4a9c7d7230a1725e,glassdoor,review,,"Amazing company!
+PROS: Exciting, fast-paced, progression, really cares about employee's and has been amazing during the covid period
+CONS: Have to be able to deal with change"
+29,audit / cons / pros,0,f80f481f8c099aa1,glassdoor,review,,"Overall good experience
+PROS: -Great people to work with
+-Great learning opportunities and exposure to different industries
+-Exposure to complex accounting issues
+CONS: -Long hours, sometimes extending outside of busy season"
+29,audit / cons / pros,1,fcbc3f20576befe1,glassdoor,review,,"Good place to work
+PROS: Easy to communicate with higher management
+CONS: Less number of perks as compared to other financial institutions"
+29,audit / cons / pros,2,e478848f9cb931c3,glassdoor,review,,"Finance and Accounting
+PROS: Good company, good work life balance.
+CONS: Nothing asper my experience. It's good."
+29,audit / cons / pros,3,d4a6e6a243c9e412,glassdoor,review,,"Very good bank
+PROS: Good to work in this organisation
+CONS: Not as such encountered so far"
+29,audit / cons / pros,4,b6a9b77dd7b738dd,glassdoor,review,,"Overview
+PROS: Great Exposure to the financial services industry
+CONS: Very long hours and low pay"

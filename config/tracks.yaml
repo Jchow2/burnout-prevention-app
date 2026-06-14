@@ -1,0 +1,650 @@
+# config/tracks.yaml
+# Evidence-based wellbeing tracks grounded in corpus cluster analysis.
+# Cluster IDs reference workforce_all_text_with_clusters.parquet
+# Interventions are 2-10 min, require no equipment, and suit break room / commute / home.
+# Language is non-clinical: skills, tracks, tools, reset, recovery, focus, stability.
+
+tracks:
+
+  # ────────────────────────────────────────────────────────────────────────────
+  - track_id: restore
+    title: "Energy Reset"
+    archetype: "Overtime fatigue"
+    description: >
+      When your body and mind are running on empty — long shifts, broken sleep,
+      chronic overload — this track helps you reclaim physical and mental energy
+      in the time you have. Rooted in breathing physiology and restorative
+      attention practices.
+    techniques:
+      - box breathing
+      - progressive tension release
+      - restorative attention
+    duration_options: [5, 7, 10]
+    cluster_ids: [8, 19, 28]
+    progress_metrics:
+      - {id: energy,  label: "Energy",        direction: higher_better}
+      - {id: tension, label: "Tension",        direction: lower_better}
+      - {id: clarity, label: "Mental clarity", direction: higher_better}
+    interventions:
+
+      - id: restore_box_breath
+        title: "Box Breathing Reset"
+        duration_minutes: 5
+        environment: [break_room, commute, home]
+        tags: [breathing, quick, silent]
+        instructions: |
+          Sit or stand comfortably. Close your eyes if it feels safe to do so.
+          Breathe in through your nose for 4 counts.
+          Hold gently for 4 counts.
+          Exhale slowly through your mouth for 4 counts.
+          Hold gently for 4 counts.
+          Repeat for 5 minutes (approximately 15 cycles).
+          On the last exhale, let your shoulders drop and scan for any
+          remaining tension you can release.
+        why_it_works: >
+          Box breathing activates the parasympathetic nervous system, reducing
+          cortisol and heart rate within minutes. Used by military and emergency
+          personnel for rapid stress regulation (Jerath et al., 2015).
+
+      - id: restore_tension_release
+        title: "Progressive Tension Release"
+        duration_minutes: 7
+        environment: [break_room, home]
+        tags: [body, muscle, quiet]
+        instructions: |
+          Sit in a chair with your feet flat on the floor.
+          Start at your feet: squeeze your toes tightly for 5 seconds, then release.
+          Move up: calves, thighs, abdomen, hands (fists), shoulders, face.
+          Squeeze each group for 5 seconds, then completely let go.
+          After the final release, sit quietly for 30 seconds and notice
+          how different your body feels.
+        why_it_works: >
+          Progressive muscle relaxation (PMR) significantly reduces physical
+          tension and anxiety. Brief versions (under 10 min) show measurable
+          heart rate and cortisol reduction (Jacobson, 1938; Conrad & Roth, 2007).
+
+      - id: restore_micro_walk
+        title: "Restorative Micro-Walk"
+        duration_minutes: 5
+        environment: [break_room]
+        tags: [movement, sensory, outdoor_optional]
+        instructions: |
+          Step outside or find a quiet corridor.
+          Walk slowly — about half your usual pace.
+          Focus only on your senses: what you can hear, see, and feel underfoot.
+          If thoughts about work arise, gently return your attention
+          to the next footstep and what you notice around you.
+          End by taking three slow, deliberate breaths before re-entering.
+        why_it_works: >
+          Brief walks in nature or semi-natural settings restore directed
+          attention and reduce fatigue (Kaplan, 1995). Even indoor slow walks
+          with sensory focus activate restorative processing (Ohly et al., 2016).
+
+      - id: restore_power_rest
+        title: "Guided Stillness Rest"
+        duration_minutes: 10
+        environment: [break_room, home]
+        tags: [rest, body_scan, quiet]
+        instructions: |
+          Find a quiet spot. Sit back or lie down if possible.
+          Close your eyes and take 3 slow breaths to settle.
+          Silently scan your body from head to toe — not changing anything,
+          just noticing: weight, temperature, any sensations present.
+          Then imagine each breath carrying a small amount of tension out
+          on the exhale. You do not need to sleep — simply resting your
+          eyes and attention is enough.
+          At the end, wiggle your fingers and toes before opening your eyes.
+        why_it_works: >
+          Non-sleep deep rest (NSDR) protocols reduce fatigue and improve
+          alertness and focus without the grogginess of full sleep
+          (Huberman & Bhatt, 2021; Lahl et al., 2008).
+
+  # ────────────────────────────────────────────────────────────────────────────
+  - track_id: ground
+    title: "Stay Grounded"
+    archetype: "Manager friction"
+    description: >
+      After a difficult interaction, unfair situation, or frustrating day,
+      this track helps you regulate the emotional charge so it does not carry
+      into the rest of your day. Skills drawn from grounding techniques and
+      cognitive distance practices.
+    techniques:
+      - sensory grounding
+      - cognitive defusion
+      - expressive writing
+      - somatic release
+    duration_options: [3, 5, 7]
+    cluster_ids: [2, 10, 13, 25]
+    progress_metrics:
+      - {id: tension, label: "Tension",        direction: lower_better}
+      - {id: clarity, label: "Mental clarity", direction: higher_better}
+      - {id: energy,  label: "Energy",         direction: higher_better}
+    interventions:
+
+      - id: ground_sensory_anchor
+        title: "5-4-3-2-1 Sensory Anchor"
+        duration_minutes: 5
+        environment: [break_room, commute, home]
+        tags: [grounding, sensory, quick]
+        instructions: |
+          Name 5 things you can SEE right now.
+          Name 4 things you can physically TOUCH or FEEL (chair, fabric, air temperature).
+          Name 3 things you can HEAR.
+          Name 2 things you can SMELL (or imagine a pleasant smell).
+          Name 1 thing you can TASTE.
+          Take one slow breath after each sense. By the end, you should feel
+          more anchored in the present moment and less inside the frustrating thought.
+        why_it_works: >
+          Sensory grounding interrupts the rumination cycle by pulling
+          attention into present-moment sensory experience. Widely used in
+          evidence-based stabilisation protocols (Briere & Scott, 2006).
+
+      - id: ground_thought_distance
+        title: "Thought Distancing"
+        duration_minutes: 5
+        environment: [commute, home, break_room]
+        tags: [cognitive, reframing, silent]
+        instructions: |
+          Bring the frustrating thought to mind briefly.
+          Now prefix it with: "I notice I'm having the thought that..."
+          Say the new version silently a few times.
+          Then imagine placing the thought on a leaf and watching it float
+          downstream, or on a cloud drifting past.
+          You are not suppressing the thought — you are creating space
+          between you and it. Notice if the feeling shifts slightly.
+        why_it_works: >
+          Cognitive defusion (ACT-based) reduces the power of unhelpful thoughts
+          by changing your relationship to them rather than fighting their content
+          (Hayes et al., 2006; Levin et al., 2012).
+
+      - id: ground_write_release
+        title: "Write & Release"
+        duration_minutes: 5
+        environment: [break_room, home]
+        tags: [writing, expressive, private]
+        instructions: |
+          Take a scrap of paper or open a blank note on your phone.
+          Write freely for 3 minutes about what happened and how you feel.
+          No editing, no grammar — just raw thought.
+          When done, read it once, then fold the paper over (or delete the note).
+          The act of externalising and discarding signals your brain that
+          the situation has been acknowledged and can be set aside.
+        why_it_works: >
+          Expressive writing reduces emotional intensity and intrusive thoughts
+          within a single session (Pennebaker & Beall, 1986; Smyth, 1998).
+          Brief versions (3 min) are nearly as effective as longer ones.
+
+      - id: ground_body_shake
+        title: "Tension Shake"
+        duration_minutes: 3
+        environment: [break_room, home]
+        tags: [movement, body, somatic]
+        instructions: |
+          Stand up if possible.
+          Gently shake your hands as if flicking water off them.
+          Let the shake travel up through your wrists, forearms, and arms.
+          Roll your shoulders forward and back 5 times.
+          Shake your legs gently, shifting weight from foot to foot.
+          Finish by taking 3 slow breaths and planting your feet firmly.
+        why_it_works: >
+          Somatic shaking releases residual muscle tension associated with
+          the stress response. Brief movement interrupts the freeze response
+          and returns the body toward baseline (Levine, 1997; van der Kolk, 2014).
+
+  # ────────────────────────────────────────────────────────────────────────────
+  - track_id: rebalance
+    title: "Boundary Reset"
+    archetype: "Work-life imbalance"
+    description: >
+      When work bleeds into personal time and you cannot switch off,
+      this track gives you structured ways to create a psychological boundary
+      between work mode and recovery mode. Even a 3-minute ritual can
+      dramatically improve restoration.
+    techniques:
+      - threshold ritual
+      - values clarification
+      - slow exhalation breathing
+    duration_options: [3, 5, 10]
+    cluster_ids: [1, 8]
+    progress_metrics:
+      - {id: energy,  label: "Energy",         direction: higher_better}
+      - {id: tension, label: "Tension",         direction: lower_better}
+      - {id: clarity, label: "Mental clarity",  direction: higher_better}
+    interventions:
+
+      - id: rebalance_threshold
+        title: "Transition Ritual"
+        duration_minutes: 3
+        environment: [commute, home]
+        tags: [ritual, boundary, quick]
+        instructions: |
+          Choose a physical marker that signals your transition from work to
+          non-work (e.g., the moment you leave the building, get in the car,
+          or change your clothes at home).
+          At that moment, pause for 30 seconds and mentally say:
+          "I've done what I can today. The rest waits until tomorrow."
+          Take 5 slow breaths, each slightly longer on the exhale.
+          Then do one small non-work action (make a drink, step outside briefly).
+          The key is consistency — the same sequence each time builds the signal.
+        why_it_works: >
+          Psychological detachment from work during off-time is one of the
+          strongest predictors of next-day energy and reduced fatigue
+          (Sonnentag & Fritz, 2007). Rituals create reliable neural cues for switching.
+
+      - id: rebalance_values
+        title: "Values Check-In"
+        duration_minutes: 5
+        environment: [break_room, commute, home]
+        tags: [reflection, values, quiet]
+        instructions: |
+          Take a few slow breaths and ask yourself:
+          "What matters to me most outside of work?" (family, health,
+           a hobby, connection — whatever is true for you.)
+          Hold one of those things in mind for 30 seconds.
+          Now ask: "Did I make even a small space for that today?"
+          If yes, acknowledge it. If not, plan one small act for this evening.
+          This is not about guilt — it is a compass check.
+        why_it_works: >
+          Values-based attention buffers against work-related stress by
+          reconnecting you to intrinsic motivators (Steger et al., 2012).
+          Brief clarification exercises improve boundary-setting behaviours.
+
+      - id: rebalance_exhale_breath
+        title: "Slow Exhale Wind-Down"
+        duration_minutes: 5
+        environment: [home, commute]
+        tags: [breathing, evening, calm]
+        instructions: |
+          Sit comfortably. Begin breathing naturally for 1 minute.
+          Then extend your exhale: breathe in for 4 counts,
+          exhale slowly for 8 counts. Repeat for 4 minutes.
+          A long exhale activates the parasympathetic system more strongly
+          than the inhale — you are directly telling your nervous system
+          that the active part of the day is over.
+        why_it_works: >
+          Extended exhalation breathing increases heart rate variability (HRV)
+          and promotes parasympathetic tone, supporting recovery from workday
+          stress (Zaccaro et al., 2018; Jerath et al., 2015).
+
+  # ────────────────────────────────────────────────────────────────────────────
+  - track_id: aspire
+    title: "Find Your Thread"
+    archetype: "Career stagnation"
+    description: >
+      When work feels meaningless or your path feels unclear, this track
+      reconnects you to your strengths, your growth, and a forward direction —
+      even in small ways. Skills drawn from strengths-based and meaning-making
+      frameworks in positive psychology.
+    techniques:
+      - strengths reflection
+      - values mapping
+      - prospective thinking
+    duration_options: [5, 7, 10]
+    cluster_ids: [3, 19]
+    progress_metrics:
+      - {id: clarity, label: "Mental clarity", direction: higher_better}
+      - {id: energy,  label: "Energy",         direction: higher_better}
+      - {id: tension, label: "Tension",         direction: lower_better}
+    interventions:
+
+      - id: aspire_strengths_moment
+        title: "Strengths Moment"
+        duration_minutes: 5
+        environment: [break_room, commute, home]
+        tags: [reflection, strengths, positive]
+        instructions: |
+          Bring to mind a moment — recent or in the past — when you felt
+          genuinely capable, skilled, or in your element at work.
+          Describe that moment in your mind (or briefly in writing):
+          What were you doing? What did it feel like to do it well?
+          What strength were you using (problem-solving, listening,
+          creativity, steadiness under pressure, etc.)?
+          That strength is still yours. It has not disappeared because
+          today was frustrating.
+        why_it_works: >
+          Strengths-based reflection improves engagement and wellbeing more
+          reliably than weakness-fixing (Linley & Joseph, 2004; Seligman, 2011).
+          Even a 5-min recall activates the same self-efficacy circuits.
+
+      - id: aspire_one_line_vision
+        title: "One-Line Vision"
+        duration_minutes: 5
+        environment: [break_room, home]
+        tags: [writing, forward, goal]
+        instructions: |
+          Take a blank page or note. Set a 4-minute timer.
+          Write this prompt at the top:
+          "In 2 years, the version of me that's proud of my work..."
+          Complete the sentence — just one line. Don't overthink it.
+          The goal is not a full career plan. It is to activate the
+          part of your brain that looks forward rather than treading water.
+          Read it back once. Keep it somewhere you'll see it.
+        why_it_works: >
+          Brief prospective writing activates approach motivation and reduces
+          amotivation. Small concrete vision statements improve self-regulation
+          and goal pursuit (Oettingen, 2012; Grant, 2012).
+
+      - id: aspire_progress_spots
+        title: "Progress Spotting"
+        duration_minutes: 3
+        environment: [commute, home, break_room]
+        tags: [reflection, growth, quick]
+        instructions: |
+          Answer these three questions (silently or in writing):
+          1. What do I know or do now that I couldn't 6 months ago?
+          2. What situation that used to derail me can I now handle better?
+          3. Who did I help or influence in some positive way this month?
+          Progress is often invisible because it becomes the new baseline.
+          This exercise makes it visible again.
+        why_it_works: >
+          Recognising personal progress reduces amotivation and boosts
+          intrinsic motivation (Amabile & Kramer, 2011). The "progress
+          principle" shows small wins are as motivating as large achievements.
+
+  # ────────────────────────────────────────────────────────────────────────────
+  - track_id: steady
+    title: "Steady Ground"
+    archetype: "Financial pressure"
+    description: >
+      Financial stress is one of the most persistent and draining forms of
+      workplace strain. This track does not give financial advice — instead,
+      it gives you tools to stop stress from spiralling by refocusing on
+      what is stable and within reach right now.
+    techniques:
+      - worry postponement
+      - controllables focus
+      - gratitude anchoring
+    duration_options: [3, 5, 7]
+    cluster_ids: [21, 23]
+    progress_metrics:
+      - {id: tension, label: "Tension",         direction: lower_better}
+      - {id: clarity, label: "Mental clarity",  direction: higher_better}
+      - {id: energy,  label: "Energy",          direction: higher_better}
+    interventions:
+
+      - id: steady_worry_postpone
+        title: "Worry Postponement"
+        duration_minutes: 5
+        environment: [break_room, commute, home]
+        tags: [cognitive, worry, scheduling]
+        instructions: |
+          When a financial worry arrives during the day, acknowledge it:
+          "I notice this worry. I will give it proper attention at [time]."
+          Write it down briefly (a note on your phone is fine).
+          Then return your attention to the present task.
+          At the scheduled time, review the note and give the worry
+          10 minutes of structured attention — write out the concern,
+          what's unknown, and one concrete step you can take.
+        why_it_works: >
+          Worry postponement reduces generalised anxiety by containing rumination
+          to a scheduled slot, which is more effective than thought suppression
+          (Borkovec et al., 1983; Craske et al., 1989).
+
+      - id: steady_controllables
+        title: "Controllables Focus"
+        duration_minutes: 5
+        environment: [home, break_room]
+        tags: [reflection, control, agency]
+        instructions: |
+          Draw (or imagine) two circles — an outer "Circle of Concern"
+          and an inner "Circle of Control."
+          Name 3 things in your current financial situation that concern you.
+          For each one, decide: is there anything I can do about this today?
+          If yes, write down the smallest step. If no, place it consciously
+          in the outer circle and acknowledge: "This is real, and it is not
+          mine to solve right now."
+        why_it_works: >
+          The circles model (Covey, 1989) reduces overwhelm by directing
+          cognitive energy toward actionable items. Refocusing on
+          controllables has been shown to reduce helplessness responses.
+
+      - id: steady_anchor
+        title: "Adequacy Anchor"
+        duration_minutes: 3
+        environment: [commute, home, break_room]
+        tags: [gratitude, anchor, quick]
+        instructions: |
+          Close your eyes or soften your gaze.
+          Bring to mind three things you have access to today that
+          support your basic stability — even small: a meal, a roof,
+          one person who is in your corner, a skill that earns you income.
+          Don't force positivity. Simply acknowledge: "These exist right now."
+          Take one slow breath after each.
+          This is not about minimising what's hard — it is about not
+          letting the hard things erase what is still solid.
+        why_it_works: >
+          Gratitude anchoring shifts attentional bias from threat to resource,
+          reducing anxiety without denial (Emmons & McCullough, 2003).
+          Brief versions show measurable affect changes within 5 minutes.
+
+  # ────────────────────────────────────────────────────────────────────────────
+  - track_id: connect
+    title: "Shared Ground"
+    archetype: "Systemic frustration"
+    description: >
+      When frustration comes from systems and structures rather than
+      individual events — unfair pay, powerlessness, feeling unheard — this
+      track helps you process that frustration without letting it consume you,
+      and find small ways to reconnect to meaning and community.
+    techniques:
+      - perspective anchoring
+      - micro-contribution
+      - meaning mapping
+    duration_options: [5, 7, 10]
+    cluster_ids: [9, 11]
+    progress_metrics:
+      - {id: energy,  label: "Energy",         direction: higher_better}
+      - {id: tension, label: "Tension",         direction: lower_better}
+      - {id: clarity, label: "Mental clarity",  direction: higher_better}
+    interventions:
+
+      - id: connect_perspective_anchor
+        title: "Perspective Anchor"
+        duration_minutes: 5
+        environment: [commute, home, break_room]
+        tags: [perspective, meaning, cognitive]
+        instructions: |
+          Acknowledge the frustration fully for 1 minute — name what feels
+          unfair, what you wish were different.
+          Then ask: "Who else is navigating something similar right now?"
+          You are not alone in this. Systems that feel broken affect many.
+          Finally ask: "What is one small way I am still preserving
+          something that matters to me — my integrity, my care for others,
+          my refusal to give up?"
+          End with a slow breath. You do not have to solve the system today.
+        why_it_works: >
+          Perspective-taking and common humanity awareness reduce feelings of
+          isolation during systemic stress (Neff, 2011). Connecting frustration
+          to shared experience activates pro-social motivation rather than shutdown.
+
+      - id: connect_micro_contribution
+        title: "Micro-Contribution"
+        duration_minutes: 5
+        environment: [break_room]
+        tags: [social, giving, positive]
+        instructions: |
+          Choose one small, genuine act of support for a colleague today:
+          — Acknowledge a small win they had ("That was well handled.")
+          — Ask one real question about how they're doing (and listen)
+          — Offer to take one small task off their plate
+          Research shows that giving support is as restorative as receiving it.
+          The act reminds you that your presence and attention have value,
+          even when the larger system feels indifferent.
+        why_it_works: >
+          Prosocial behaviour activates the reward system and increases
+          sense of meaning and self-efficacy (Dunn et al., 2008; Grant, 2013).
+          Even brief acts of contribution buffer against helplessness.
+
+      - id: connect_meaning_map
+        title: "Meaning Mapping"
+        duration_minutes: 7
+        environment: [home, break_room]
+        tags: [reflection, values, writing]
+        instructions: |
+          Write the word YOU at the centre of a page.
+          Around it, write 4-5 things you care about most in life
+          (people, causes, goals, experiences, qualities you want to embody).
+          For each one, draw a line to your current job and ask:
+          Does this work — even partially — connect to this?
+          Some lines may be thin. Some may not exist.
+          But if even one thread connects, it is real and worth protecting.
+          The goal is not to feel better about everything — it is to find
+          the genuine thread, however small.
+        why_it_works: >
+          Meaning-making moderates the impact of unfulfilling work conditions
+          (Steger et al., 2012). Identifying even one source of purpose
+          significantly buffers against disengagement and strain.
+
+  # ────────────────────────────────────────────────────────────────────────────
+  - track_id: thrive
+    title: "Culture Anchor"
+    archetype: "Toxic culture"
+    description: >
+      When the environment around you is draining — political, negative,
+      or underappreciative — this track helps you build small pockets of
+      positive culture in your own sphere and reinforce what is working,
+      so you are not entirely defined by what is not.
+    techniques:
+      - appreciation practice
+      - strength-spotting
+      - small wins logging
+    duration_options: [3, 5, 7]
+    cluster_ids: [16, 18]
+    progress_metrics:
+      - {id: energy,  label: "Energy",         direction: higher_better}
+      - {id: clarity, label: "Mental clarity",  direction: higher_better}
+      - {id: tension, label: "Tension",         direction: lower_better}
+    interventions:
+
+      - id: thrive_appreciation_note
+        title: "Appreciation Note"
+        duration_minutes: 3
+        environment: [break_room, home]
+        tags: [gratitude, social, quick]
+        instructions: |
+          Think of one person at work (colleague, support staff, a manager)
+          who did something useful or kind recently — even something small.
+          Write them a 2-3 sentence note, message, or email expressing
+          specific appreciation: what they did, and why it mattered to you.
+          You can send it or keep it — the act of writing it matters regardless.
+          If sending feels uncomfortable, simply hold the thought for 30 seconds.
+        why_it_works: >
+          Expressing specific appreciation increases wellbeing in the giver
+          more reliably than the receiver. It also activates positive emotion
+          circuits that buffer against negativity bias (Seligman et al., 2005).
+
+      - id: thrive_strength_spot
+        title: "Strength-Spotting"
+        duration_minutes: 5
+        environment: [break_room, home, commute]
+        tags: [positive, observation, strengths]
+        instructions: |
+          Choose one person you interact with regularly at work.
+          Observe (or recall from today): what did they do that reflected
+          a genuine strength? (Think: calm under pressure, attention to detail,
+          warmth with others, creative thinking, reliability.)
+          Name the strength specifically to yourself.
+          Consider: can I tell them? Even a casual mention ("I noticed you
+          handled that really well — you're good at keeping things calm.")
+          carries significant weight.
+        why_it_works: >
+          Strength-spotting in others shifts attention from deficit to resource,
+          improving interpersonal climate. It also activates appreciative
+          attention that improves the spotter's own mood (Niemiec, 2018).
+
+      - id: thrive_small_wins
+        title: "Small Wins Log"
+        duration_minutes: 5
+        environment: [home, break_room]
+        tags: [reflection, positive, writing]
+        instructions: |
+          At the end of your shift or day, write three things that went
+          reasonably well — however small:
+          — A task you completed
+          — A moment of connection with a colleague
+          — Something you handled better than you might have yesterday
+          Do not write what you wish went differently. Only what, however
+          small, actually went okay. Read it back once before you close the note.
+        why_it_works: >
+          Small wins logging redirects negativity bias and builds a cumulative
+          sense of competence and progress. Consistent practice (3+ days)
+          measurably improves mood and reduces end-of-day stress
+          (Amabile & Kramer, 2011; Seligman et al., 2005).
+
+  # ────────────────────────────────────────────────────────────────────────────
+  - track_id: decompress
+    title: "People Pressure Reset"
+    archetype: "Customer burnout"
+    description: >
+      Customer-facing and client-heavy work demands sustained emotional labour.
+      When you've absorbed too many interactions, this track helps you
+      disengage from the emotional residue of others without becoming
+      indifferent, and restore your own sense of self at the end of a contact-heavy day.
+    techniques:
+      - empathy reset
+      - sensory switching
+      - role debrief
+    duration_options: [3, 5, 7]
+    cluster_ids: [17]
+    progress_metrics:
+      - {id: tension, label: "Tension",         direction: lower_better}
+      - {id: energy,  label: "Energy",          direction: higher_better}
+      - {id: clarity, label: "Mental clarity",  direction: higher_better}
+    interventions:
+
+      - id: decompress_empathy_reset
+        title: "Observer Shift"
+        duration_minutes: 5
+        environment: [break_room, commute, home]
+        tags: [cognitive, emotional, perspective]
+        instructions: |
+          Bring to mind a difficult interaction from today.
+          Replay it briefly — then deliberately shift your perspective:
+          instead of being inside the interaction, imagine watching it
+          from 10 feet above, like a kind neutral observer.
+          Ask from that perspective: "What was that person carrying today?
+          What might have caused them to respond that way?"
+          You do not have to excuse the behaviour — just create a small
+          gap between their experience and yours. Notice if the charge reduces.
+        why_it_works: >
+          Observer perspective-taking reduces emotional reactivity and empathic
+          distress (Batson et al., 2003). Decentering from interactions is a
+          core skill in preventing emotional exhaustion in service work.
+
+      - id: decompress_sensory_shift
+        title: "Sensory Channel Change"
+        duration_minutes: 3
+        environment: [break_room]
+        tags: [sensory, quick, body]
+        instructions: |
+          Step away from the customer-facing area if possible.
+          Choose one sharp sensory experience to "change channels":
+          — Hold your wrists under cool water for 30 seconds
+          — Step outside briefly and feel the air on your face
+          — Apply a hand lotion with a scent you associate with calm
+          — Eat or drink something slowly, focusing only on the flavour
+          The goal is to interrupt the lingering emotional residue of
+          interactions by giving your senses something new to attend to.
+        why_it_works: >
+          Sensory interruption breaks the perseveration cycle that follows
+          emotionally charged interactions. Brief pleasant sensory inputs shift
+          attentional focus and reduce cortisol spike persistence.
+
+      - id: decompress_role_debrief
+        title: "Shift End Debrief"
+        duration_minutes: 5
+        environment: [commute, home]
+        tags: [ritual, debrief, reflection]
+        instructions: |
+          Acknowledge your role: "Today I held space for [X] people,
+          handled [Y] situations, and stayed [reasonably] professional
+          throughout. That is actual work — often invisible, always effortful."
+          Name one interaction that went well (however briefly).
+          Then consciously set down the role: "That shift is done.
+          Those people's problems are not mine to carry home."
+          Take 3 slow breaths and do one small action that signals
+          you are now off-duty.
+        why_it_works: >
+          Named debrief rituals after emotionally demanding work reduce
+          emotional spillover and next-day fatigue (Sonnentag et al., 2010).
+          Acknowledging the labour of emotional work increases self-compassion.

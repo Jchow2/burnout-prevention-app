@@ -1,0 +1,286 @@
+# config/personas.yaml
+# Persona-based simulations grounded in real cluster data.
+# Each persona is derived from cluster_ids and uses text_snippets drawn from
+# cluster_representatives.csv. Personas are illustrative archetypes — not
+# clinical profiles. They help users see themselves in the data and explore
+# the most relevant track for their situation.
+
+personas:
+
+  - id: overtime_fatigue
+    name: "Alex"
+    role: "Healthcare / shift worker"
+    description: >
+      Alex works 12-hour shifts in a high-demand environment. By the end of a
+      run of shifts, physical exhaustion and emotional drain merge into a
+      general fog. Sleep is never quite enough and "recovery" feels like
+      just surviving until the next shift. Alex isn't looking for a solution —
+      just a moment of actual rest.
+    cluster_ids: [8, 19, 28]
+    default_track_id: restore
+    representative_snippets:
+      - cluster_id: 8
+        source: glassdoor
+        text: >
+          "CONS: Long time work hours. Less management. Can be very busy
+          and hectic — you just keep going until it's done."
+      - cluster_id: 19
+        source: reddit
+        text: >
+          "I have multiple serious debilitating illnesses. All made worse by
+          working. I'm talking for years. What can those of us who can barely
+          keep slaving away do?"
+      - cluster_id: 28
+        source: glassdoor
+        text: >
+          "Laid off due to COVID — only kept salary staff. Was casual.
+          Just when you find a rhythm, the floor drops out."
+      - cluster_id: 8
+        source: reddit
+        text: >
+          "I used to work 50-60 hrs a week. Maybe I'd go back to it for
+          triple or quadruple the pay. But probably not because that job sucked."
+
+  - id: manager_friction
+    name: "Jordan"
+    role: "Office / knowledge worker"
+    description: >
+      Jordan has a manager who is inconsistent, sometimes demeaning, and
+      occasionally takes credit for others' work. Interactions leave a residue
+      that makes it hard to concentrate. Jordan doesn't want to quit — the work
+      itself is fine — but the dynamic is slowly wearing them down.
+    cluster_ids: [2, 13, 10]
+    default_track_id: ground
+    representative_snippets:
+      - cluster_id: 13
+        source: reddit
+        text: >
+          "I worked at a small construction company. They were garbage humans.
+          The quitting moment came when they told me I must work Saturday
+          (an off day) or they'd dock my holiday. There was no discussion."
+      - cluster_id: 10
+        source: reddit
+        text: >
+          "I used to work with a woman who had her seat next to the sign-in
+          sheet. She'd tsk-tsk when we'd sign out. 'Easy day?' she'd say
+          when I clocked out after ten hours. Drove me fucking mad."
+      - cluster_id: 2
+        source: glassdoor
+        text: >
+          "CONS: Too many managers. No communication. Low pay.
+          Sometimes management was quite poor."
+      - cluster_id: 13
+        source: reddit
+        text: >
+          "I kept scrolling through this subreddit and immediately thought
+          of my job. Maskless people everywhere, management invisible,
+          and somehow it was always our fault."
+
+  - id: career_stagnation
+    name: "Sam"
+    role: "Mid-career professional"
+    description: >
+      Sam has been in the same role for several years. The initial growth has
+      stalled. Every time a promotion or new project comes up, it seems to go
+      to someone else or disappear into bureaucracy. Sam still cares — that is
+      the painful part — but doesn't know how to move forward without a clear signal.
+    cluster_ids: [3, 19]
+    default_track_id: aspire
+    representative_snippets:
+      - cluster_id: 3
+        source: glassdoor
+        text: >
+          "Great place to start a career. CONS: Salary and compensation
+          are limited. Management growth is limited within the company —
+          you can see the ceiling from day one."
+      - cluster_id: 19
+        source: reddit
+        text: >
+          "I've come to a point in my life where healing / unlearning /
+          discovering my true self has become a priority. I'm 29. I have a
+          degree. I have worked here for 6 years. And I feel like I'm standing still."
+      - cluster_id: 3
+        source: glassdoor
+        text: >
+          "If you're staying for the long run it is only worthwhile if you
+          make it to Partner. Long working hours, almost 24/7 type operations,
+          very little work-life separation."
+      - cluster_id: 19
+        source: reddit
+        text: >
+          "I just turned 24 years old. I am beyond grateful to still have a
+          job in these uncertain times, but even so... I don't know what I'm
+          building toward."
+
+  - id: work_life_imbalance
+    name: "Taylor"
+    role: "Working parent / dual-role"
+    description: >
+      Taylor is managing full-time work and significant responsibilities at home
+      — a young family, a caring role, or both. The two halves of life compete
+      for the same limited energy. "Balance" feels like a word that applies to
+      other people's lives. Taylor is looking for any way to genuinely switch off
+      when the work day ends.
+    cluster_ids: [1, 8]
+    default_track_id: rebalance
+    representative_snippets:
+      - cluster_id: 1
+        source: glassdoor
+        text: >
+          "PROS: Good work life balance in company.
+          CONS: Pay is less compared to industry standards. Not great
+          for long-term — eventually the balance tips."
+      - cluster_id: 8
+        source: glassdoor
+        text: >
+          "PROS: Very flexible working hours for all staff.
+          CONS: Can be very busy and hectic. No pay rise, slow progression.
+          Flexible means you flex toward them, not yourself."
+      - cluster_id: 1
+        source: glassdoor
+        text: >
+          "Great work life balance and great people.
+          CONS: It is a large company, so not for everyone.
+          The balance is real but fragile."
+      - cluster_id: 8
+        source: glassdoor
+        text: >
+          "Long time work hours. Working environment is all good but
+          the hours take a toll when you're also trying to be present
+          for the people at home."
+
+  - id: financial_pressure
+    name: "Morgan"
+    role: "Service / retail worker"
+    description: >
+      Morgan works hard and is paid less than the work demands. The gap between
+      effort and reward is a constant source of quiet resentment. Financial
+      anxiety is always present — not in crisis, but as a low-level hum that
+      makes it hard to feel secure or plan ahead. Morgan is not looking for
+      financial advice, just a way to stop the worry spiral.
+    cluster_ids: [21, 23]
+    default_track_id: steady
+    representative_snippets:
+      - cluster_id: 23
+        source: reddit
+        text: >
+          "I am a young adult worker and have a good work ethic, but I hate
+          it when employers expect a lot out of you and they are paying you
+          way below market rates. I will put in bare minimum effort if that's
+          all they value."
+      - cluster_id: 21
+        source: glassdoor
+        text: >
+          "Good pay, nice colleagues, opportunity to travel around.
+          CONS: Work life balance issue, promotion not constant.
+          Monotonous work, sometimes super hectic."
+      - cluster_id: 23
+        source: reddit
+        text: >
+          "Obvious boomer here working for minimum wage in 1978: 'I'm going
+          to give you a 15-cent raise.' Was kinda pleased until I did the maths."
+      - cluster_id: 21
+        source: glassdoor
+        text: >
+          "CONS: Salary and compensation are limited from the start.
+          You can see where the ceiling is before you've really begun."
+
+  - id: systemic_frustration
+    name: "Casey"
+    role: "Worker aware of labour dynamics"
+    description: >
+      Casey understands the structural reasons for what's happening at work —
+      and that understanding makes it more, not less, frustrating. The gap between
+      what is and what should be is not ignorance but clear sight. Casey isn't
+      looking to be gaslit into positivity, just a way to hold the frustration
+      without being consumed by it.
+    cluster_ids: [9, 11]
+    default_track_id: connect
+    representative_snippets:
+      - cluster_id: 9
+        source: reddit
+        text: >
+          "They just took the veneer off capitalism. It has always been a threat.
+          Work or die. The pandemic just made it legible."
+      - cluster_id: 11
+        source: reddit
+        text: >
+          "I work at a unionised grocery chain. Since the beginning of the
+          pandemic our staffing has continued to decline while profits soared.
+          We are not naive about what's happening."
+      - cluster_id: 9
+        source: reddit
+        text: >
+          "The billionaires, their corporate managers and boards are so out of
+          control with greed, worker rights and ethics violations — all during
+          a deadly pandemic."
+      - cluster_id: 11
+        source: reddit
+        text: >
+          "A few years back, I was bussing tables. The owner of the franchise
+          came in and said: 'If you take care of the customers, they'll take care
+          of you.' They were never going to take care of us."
+
+  - id: customer_burnout
+    name: "Riley"
+    role: "Retail / hospitality / front-line service"
+    description: >
+      Riley works face-to-face with the public. Most customers are fine, but
+      the difficult ones leave a mark that lingers. After a heavy day of
+      interactions, it's hard to disengage — not because Riley cares too little,
+      but too much. The job demands a kind of emotional labour that is rarely
+      acknowledged or compensated.
+    cluster_ids: [17]
+    default_track_id: decompress
+    representative_snippets:
+      - cluster_id: 17
+        source: glassdoor
+        text: >
+          "Retail at its finest. PROS: Lovely staff, 10% discount, friendly.
+          CONS: Minimum wage, long hours, need to have a lot of patience —
+          more than should be asked of a person."
+      - cluster_id: 17
+        source: glassdoor
+        text: >
+          "CONS: Customers are terrible and make me cry.
+          PROS: Nice pay and co-workers are nice."
+      - cluster_id: 17
+        source: glassdoor
+        text: >
+          "Easy work, friendly, nice customers. CONS: Gross, hectic, busy,
+          rude employees — the public contains a wide range and you absorb
+          all of it."
+
+  - id: toxic_culture
+    name: "Drew"
+    role: "Competitive office / professional environment"
+    description: >
+      Drew works in an environment that is politically charged, competitive, and
+      often underappreciative. Effort is invisible unless it serves someone else's
+      agenda. Small wins are never acknowledged. Drew still shows up and still
+      cares — but is running out of reasons to.
+    cluster_ids: [25, 16]
+    default_track_id: thrive
+    representative_snippets:
+      - cluster_id: 25
+        source: glassdoor
+        text: >
+          "CONS: Bad managers, rude constantly, underappreciated, overworked.
+          It's very volatile and political."
+      - cluster_id: 25
+        source: glassdoor
+        text: >
+          "PROS: Free Lunches, nice external status.
+          CONS: Everything else — terrible work culture, competitive to a fault,
+          no one has your back."
+      - cluster_id: 16
+        source: glassdoor
+        text: >
+          "Work Culture is great here. Everyone is respected.
+          CONS: More or less Standard Growth Opportunities."
+      - cluster_id: 25
+        source: glassdoor
+        text: >
+          "CONS: bad managers, rude constantly, underappreciated, overworked.
+          PROS: decent pay for the work — but the pay doesn't cover what
+          the environment costs you."

@@ -2,7 +2,7 @@
 streamlit>=1.28.0
 
 # Core ML/NLP
-sentence-transformers==2.7.0
+# sentence-transformers==2.7.0  # Too heavy for Cloud (pulls PyTorch ~2GB) — app falls back to TF-IDF
 scikit-learn==1.4.0
 textblob==0.18.0
 numpy==1.26.4

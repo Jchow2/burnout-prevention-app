@@ -2,30 +2,29 @@
 streamlit>=1.28.0
 
 # Core ML/NLP
-# sentence-transformers==2.7.0  # Too heavy for Cloud (pulls PyTorch ~2GB) — app falls back to TF-IDF
-scikit-learn==1.4.0
-textblob==0.18.0
-numpy==1.26.4
-pandas==2.2.0
+# sentence-transformers is excluded — too heavy for Cloud (pulls PyTorch ~2GB)
+# The app falls back to TF-IDF automatically when it is not installed.
+scikit-learn>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
 
-# Sentiment analysis
+# Text analysis
+textblob>=0.17.0
 nltk>=3.8.0
 vaderSentiment>=3.3.2
 
-# Config
+# Config / utilities
 PyYAML>=6.0
-
-# Utilities
-python-dotenv==1.0.0
-joblib==1.3.2
-tqdm==4.66.0
+python-dotenv>=1.0.0
+joblib>=1.3.0
+tqdm>=4.65.0
 
 # ── Pipeline-only (not required to run the Streamlit app) ─────────────────────
 # Uncomment if running pipeline.py locally:
 # pyarrow>=14.0.0
-# requests==2.31.0
-# praw==7.7.1
-# fastapi==0.110.0
-# uvicorn==0.27.0
-# matplotlib==3.8.0
-# seaborn==0.13.0
+# requests>=2.31.0
+# praw>=7.7.1
+# fastapi>=0.110.0
+# uvicorn>=0.27.0
+# matplotlib>=3.8.0
+# seaborn>=0.13.0
